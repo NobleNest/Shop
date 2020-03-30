@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+    .filters, .filter-block {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-card .col:first-child { margin-right: 10px; }
+}
+
+@media (max-width: 1024px) {
+    footer .row {
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+    .logo { display: none !important; }
+
+    footer .row * {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .row .col-sm-auto {
+        width: 100%;
+    }
+
+    .filters, .filter-block {
+        width: 50%;
+        margin: auto;
+    }
+    
+    .container { max-width: none !important; }
+}
+
+@media (max-width: 960px) {
+    .order-box { width: 100% !important; }
+
+    .logo { display: none !important; }
+
+    .order-wrapper {
+        height: 600px !important;
+        margin-bottom: 50px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card .col-6 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .logo { display: none !important; }
+
+    .filters, .filter-block {
+        width: 70%;
+        margin: auto;
+    }
+
+    .order-box { height: 800px !important; }
+
+    .order-wrapper {
+        width: 50% !important;
+        height: 55% !important;
+    }
+
+    .order-wrapper ul li span:first-child {
+        white-space: nowrap;
+        width: 40%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .form-control { width: 60% !important; }
+}
+
+@media (max-width: 640px) {
+    .order-box { height: 600px !important; }
+
+    .logo { display: none !important; }
+
+    .order-wrapper { height: 40% !important; }
+
+    .order-item { flex-direction: column; }
+
+    .order-item span:first-child { width: 80% !important; }
+}
+
+@media (max-width: 480px) {
+    .banner { display: none !important; }
+
+    .logo { display: none !important; }
+
+    .tagline { display: none !important; }
+
+    .product-card .col-8 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .product-card img { width: 250px; }
+
+    .order-box h1 { font-size: 1.5em; }
+
+    .order-box { height: 500px !important; }
+}
+
+@media (max-width: 400px) {
+    .banner { display: none !important; }
+
+    .tagline { display: none !important; }
+
+    .logo { display: none !important; }
+
+    .filters, .filter-block { width: 100%; }
+
+    .order-wrapper {
+        width: 65% !important;
+        margin-bottom: 50px !important;
+    }
+
+    .form-caption { font-size: 1em !important; }
+}
+
+@media (max-width: 320px) {
+    .banner { display: none !important; }
+}

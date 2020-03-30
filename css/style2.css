@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'RotondaBold';
+    src: url('../fonts/RotondaBold.svg#RotondaBold') format('svg'),
+    url('../fonts/RotondaBold.ttf') format('truetype'),
+    url('../fonts/RotondaBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family:RotondaBold;
+    margin: 0;
+
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(251, 243, 235) !important;
+    overflow-x: hidden;
+}
+header{
+    flex-direction: column;
+    background: #fbf3eb url("../images/shapka.png") repeat-x;
+    background-size: auto;
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+}
+form input{
+    padding: 5px;
+    border: 0;
+    border-right: none;
+    float: left;
+    width: 80%;
+    border-radius: 25px 0 0 25px;
+}
+
+.button{
+    padding: 5px;
+    border: 0;
+    border-left: none;
+    border-radius: 0 25px 25px 0;
+    width: 20%;
+    float: left;
+    background: #ffffff;
+}
+form{
+    margin-top: 20px;
+}
+.s{
+    margin-top: 10px;
+    border: none;
+    background: none;
+    border-radius: 25px;
+}
+.text_head{
+    text-align: center;
+    font-size: 21px;
+    color: #1d6587;
+    margin: 0;
+    text-shadow: 4px 0 4px #fff,
+    0 4px 4px #fff,
+    -4px 0 4px #fff,
+    0 -4px 4px #fff;
+}
+.text_head1{
+    text-align: center;
+    font-size: 15px;
+    color: #1d6587;
+    margin: 0;
+    text-shadow: 4px 0 4px #fff,
+    0 4px 4px #fff,
+    -4px 0 4px #fff,
+    0 -4px 4px #fff;
+}
+
+.logo{
+
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+}
+.tel_icon{
+    color: #3a617f;
+    font-size: 22px;
+}
+.telephone1{
+    font-size: 30px;
+    color: #4a8cbf;
+    border: #ffffff 5px;
+    -webkit-text-stroke: 1px #ffffff;
+}
+.telephone2{
+
+    font-size: 27px;
+    color: #4a8cbf;
+    border: #ffffff 5px;
+    -webkit-text-stroke: 1px #ffffff;
+}
+.number{
+    width: 100%;
+    margin-top: 20px;
+}
+.graphic{
+    width: 100%;
+}
+.button-container{
+    background: #eff5f8;
+    border-radius: 25px;
+}
+.clock{
+    color:#17577a ;
+}
+.text-blue {
+    color: rgb(60, 122, 151);
+    font-weight: 500;
+}
+.bf{
+    margin-top: 10px;
+    border-radius: 25px;
+    background: #ffffff;
+}
+/*///////////////////////////////////////////*/
+.contents{
+    padding-bottom: 200px;
+    background: #fbf3eb;
+}
+.oformit{
+    background: url("../images/bg_zakaz.png") no-repeat center;
+    background-size: contain;
+    padding: 0 40px 600px 60px;
+    padding-bottom: 250px;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+.text{
+    font-size: 30px;
+    text-align: center;
+    color: #2d5d7e;
+}
+.name{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.name1{
+    margin-top: 20px;
+    width: 350px;
+    background: #f3f3f3;
+    border-radius: 5px;
+}
+.vash{
+    margin-top: 10px;
+}
+.list{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.list1{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.back_zakaz{
+    background: url("../images/bg_vashzakaz.png") no-repeat center;
+    background-size: cover;
+    width: auto;
+    font-size: small;
+    padding: 0 0 10px 0;
+}
+.buy{
+    width: 200px;
+    height: 33px;
+    background: #fce200;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    margin-top: 20px;
+}
+.buy_text{
+    font-size: 16px;
+}
+.registry{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/*footer*/
+footer {
+    background: url(../images/footer_back.png) repeat-x 100% 105%;
+    height: 200px;
+    position: relative;
+    margin-top: -200px;
+}
+footer .row {
+    width: 100%;
+    height:50px;
+    position: absolute;
+    bottom: 30px;
+}
+.logo1{
+    display: inline-block;
+    margin: auto;
+}
+.phone-number {
+    font-family: 'RotondaBold';
+    font-size: 2em;
+    position: relative;
+    padding-left: 40px;
+}
+
+.phone-number::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url(../images/phone_2.png) no-repeat center;
+    background-size: contain;
+}
+#logo-footer {
+    position: absolute;
+    bottom: -20px;
+}
+.menu_item1 a{
+    color: #ffffff;
+    font-size: 25px;
+    display: inline;
+    margin: 5px;
+}
+.social{
+    display: inline;
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+}
+#blue-num { color: rgb(6, 70, 95); }
+
+#skyblue-num { color: rgb(45, 93, 126); }
+/*//////////////////////////////////////////*/
