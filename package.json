@@ -1,0 +1,24 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DelphiHater/TEST.git"
+  },
+  "author": "N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DelphiHater/TEST/issues"
+  },
+  "homepage": "https://github.com/DelphiHater/TEST#readme"
+}
