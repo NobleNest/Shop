@@ -13,6 +13,7 @@
     <script src = "js/jquery.tmpl.min.js"></script>
     <script src = "js/my.js"></script>
     <script src = "js/jquery.cookie.js"></script>
+    <meta name="viewport" content="width=320, initial-scale=1.0"/>
     <script>
         if ('serviceWorker' in navigator) {
            navigator.serviceWorker
@@ -20,9 +21,37 @@
            .then(function() {
                console.log('Service worker registered!');
            });
+    
+           navigator.serviceWorker.ready.then(registration => {
+                if('PushManager' in window) {
+                    document.querySelector('#subscribe-for-push')
+                        .addEventListener('click', () => {
+                            askPermission()
+                        });
+                }
+            });
        }
+       
+        function askPermission() {
+            return new Promise(function(resolve, reject) {
+                const permissionResult = Notification.requestPermission(function(result) {
+                resolve(result);
+                });
+    
+                if(permissionResult) {
+                    permissionResult.then(resolve, reject);
+                }
+            })
+            .then(function(permissionResult) {
+                if(permissionResult !== 'granted') {
+                    throw new Error('We weren\'t granted permission.');
+                }
+                else {
+                    console.log('We were granted permission.');
+                }
+            });
+        }
     </script>
-    <meta name="viewport" content="width=320, initial-scale=1.0"/>
 </head>
 <body>
     <div class="wrapper">
@@ -35,6 +64,15 @@
                         <div class="input-group">
                             <input class="input-box" type="text" placeholder="поиск на сайте">
                             <button id="search-button"></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button id="subscribe-for-push" class="subscribe-for-push">Subscribe for push notifications?</button>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div id="btn-group-1" style="display:none;" class="btn-group-1">
+                            <button id="bt-one" class="wrapper_buttons"> Да</button>
+                            <button id="bt-two" class="wrapper_buttons"> Нет</button>
                         </div>
                     </div>
                     <div class="d-flex justify-content-end">
@@ -439,5 +477,27 @@
         document.getElementsByClassName("col-5")[1].appendChild(ListOfCapitals1);
     })
     ;
+</script>
+<script>
+    let btn = document.querySelector('#subscribe-for-push');
+    let el = document.querySelector('#btn-group-1');
+
+    btn.addEventListener('click', () => {
+        el.style.display === 'none' ? el.style.display = 'block' : el.style.display = 'none';
+        let bt = document.querySelector('#bt-one');
+        let b = document.querySelector('#bt-two');
+
+            bt.addEventListener('click', () => {
+                Notification.requestPermission().then(function(result) {
+                    console.log(result);
+                });
+            });
+
+            b.addEventListener('click', () => {
+                Notification.requestPermission().then(function(result) {
+                    console.log(result);
+                });
+            });
+    });
 </script>
 </html>

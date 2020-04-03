@@ -108,6 +108,19 @@ header .row {
     background-color: rgb(239, 245, 248);
 }
 
+.subscribe-for-push{
+    background-color: rgb(239, 245, 248);
+    color: rgb(60, 122, 151);
+    font-weight: 500;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.btn-group-1 {
+    width: 280px !important;
+    margin: 10px 0 10px 0;
+}
+
 .button-white {
     background-color: white;
 }
